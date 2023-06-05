@@ -10,7 +10,7 @@ function NavBar(props) {
         <div >
             <Navbar expand="lg">
                 <Container fluid>
-                    <Navbar.Brand href={`/${id}/peliculas`}>Menu</Navbar.Brand>
+                    <Navbar.Brand href={`/${id}/peliculas`} style={{ color: "white" }}>Menu</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -18,7 +18,7 @@ function NavBar(props) {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link onClick={() => navigate(`/${id}/peliculas`)}>Películas</Nav.Link>
+                            <Nav.Link style={{ color: "white" }} onClick={() => navigate(`/${id}/peliculas`)}>Películas</Nav.Link>
                             {/* <Nav.Link onClick={() => navigate(`/${id}/recomendaciones`)}>Mis recomendaciones</Nav.Link> */}
                         </Nav>
                         <Form className="d-flex form">
